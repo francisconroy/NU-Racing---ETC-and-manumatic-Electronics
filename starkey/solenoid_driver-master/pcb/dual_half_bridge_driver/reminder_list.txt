@@ -1,0 +1,6 @@
+-FUSES - 12v & (SMD and reverse polarity)
+-1 or 2 drivers per board
+-Heatsink orientation
+-Connectors (footprint)
+-Indicator LEDS
+-Undervoltage lockout
