@@ -149,8 +149,8 @@
 <hole x="85.725" y="5.08" drill="3"/>
 <hole x="50.8" y="8.89" drill="3"/>
 <hole x="28.575" y="75.565" drill="3"/>
-<text x="45.72" y="77.47" size="1.27" layer="112">www.github.com/francisconroy</text>
-<text x="45.72" y="74.93" size="1.27" layer="112">ETC module V1.0</text>
+<text x="63.5" y="75.565" size="1.27" layer="25" rot="R180">github.com/francisconroy</text>
+<text x="38.1" y="54.61" size="1.27" layer="25" rot="R90">ETC module V1.0</text>
 </plain>
 <libraries>
 <library name="diode">
