@@ -430,67 +430,11 @@
 <smd name="OUT2" x="11" y="9.6" dx="1.6" dy="0.4" layer="1" rot="R90"/>
 <smd name="FIN" x="5.5" y="10.8" dx="4" dy="3.4" layer="1" rot="R90"/>
 <smd name="FIN2" x="5.5" y="-1.2" dx="4" dy="3.4" layer="1" rot="R90"/>
-<hole x="4.2" y="12.4" drill="0.4"/>
-<hole x="4.2" y="11.8" drill="0.4"/>
-<hole x="4.2" y="11.2" drill="0.4"/>
-<hole x="4.2" y="10.6" drill="0.4"/>
-<hole x="4.2" y="10" drill="0.4"/>
-<hole x="4.2" y="9.4" drill="0.4"/>
-<hole x="4.8" y="12.4" drill="0.4"/>
-<hole x="4.8" y="11.8" drill="0.4"/>
-<hole x="4.8" y="11.2" drill="0.4"/>
-<hole x="4.8" y="10.6" drill="0.4"/>
-<hole x="4.8" y="10" drill="0.4"/>
-<hole x="4.8" y="9.4" drill="0.4"/>
-<hole x="5.4" y="9.4" drill="0.4"/>
-<hole x="5.4" y="10" drill="0.4"/>
-<hole x="5.4" y="10.6" drill="0.4"/>
-<hole x="5.4" y="11.2" drill="0.4"/>
-<hole x="5.4" y="11.8" drill="0.4"/>
-<hole x="5.4" y="12.4" drill="0.4"/>
-<hole x="6" y="12.4" drill="0.4"/>
-<hole x="6" y="11.8" drill="0.4"/>
-<hole x="6" y="11.2" drill="0.4"/>
-<hole x="6" y="10.6" drill="0.4"/>
-<hole x="6" y="10" drill="0.4"/>
-<hole x="6" y="9.4" drill="0.4"/>
-<hole x="6.6" y="9.4" drill="0.4"/>
-<hole x="6.6" y="10" drill="0.4"/>
-<hole x="6.6" y="10.6" drill="0.4"/>
-<hole x="6.6" y="11.2" drill="0.4"/>
-<hole x="6.6" y="11.8" drill="0.4"/>
-<hole x="6.6" y="12.4" drill="0.4"/>
-<hole x="4.2" y="0.4" drill="0.4"/>
-<hole x="4.8" y="0.4" drill="0.4"/>
-<hole x="4.2" y="-0.2" drill="0.4"/>
-<hole x="4.8" y="-0.2" drill="0.4"/>
-<hole x="4.2" y="-0.8" drill="0.4"/>
-<hole x="4.8" y="-0.8" drill="0.4"/>
-<hole x="4.2" y="-1.4" drill="0.4"/>
-<hole x="4.8" y="-1.4" drill="0.4"/>
-<hole x="4.2" y="-2" drill="0.4"/>
-<hole x="4.8" y="-2" drill="0.4"/>
-<hole x="4.2" y="-2.6" drill="0.4"/>
-<hole x="4.8" y="-2.6" drill="0.4"/>
-<hole x="5.4" y="0.4" drill="0.4"/>
-<hole x="6" y="0.4" drill="0.4"/>
-<hole x="6.6" y="0.4" drill="0.4"/>
-<hole x="6.6" y="-0.2" drill="0.4"/>
-<hole x="6" y="-0.2" drill="0.4"/>
-<hole x="6" y="-0.8" drill="0.4"/>
-<hole x="6.6" y="-0.8" drill="0.4"/>
-<hole x="6" y="-1.4" drill="0.4"/>
-<hole x="6.6" y="-1.4" drill="0.4"/>
-<hole x="6" y="-2" drill="0.4"/>
-<hole x="6.6" y="-2" drill="0.4"/>
-<hole x="6" y="-2.6" drill="0.4"/>
-<hole x="6.6" y="-2.6" drill="0.4"/>
 <smd name="P$4" x="5.5" y="-1.2" dx="4" dy="3.4" layer="16" rot="R90"/>
 <smd name="P$20" x="5.5" y="10.8" dx="4" dy="3.4" layer="16" rot="R90"/>
 <wire x1="0.4" y1="9.6" x2="0.6" y2="9.6" width="0.127" layer="21"/>
 <wire x1="1.4" y1="9.6" x2="1.6" y2="9.6" width="0.127" layer="21"/>
 <wire x1="2.4" y1="9.6" x2="2.6" y2="9.6" width="0.127" layer="21"/>
-<wire x1="3.4" y1="9.6" x2="3.6" y2="9.6" width="0.127" layer="21"/>
 <wire x1="7.4" y1="9.6" x2="7.6" y2="9.6" width="0.127" layer="21"/>
 <wire x1="8.4" y1="9.6" x2="8.6" y2="9.6" width="0.127" layer="21"/>
 <wire x1="9.4" y1="9.6" x2="9.6" y2="9.6" width="0.127" layer="21"/>
@@ -512,6 +456,46 @@
 <circle x="0.4" y="1.8" radius="0.6" width="0.127" layer="21"/>
 <text x="0.4" y="5.8" size="1.27" layer="25">&gt;name</text>
 <text x="0.4" y="3.4" size="1.27" layer="27">&gt;value</text>
+<hole x="4.445" y="12.065" drill="0.381"/>
+<hole x="5.08" y="12.065" drill="0.381"/>
+<hole x="5.715" y="12.065" drill="0.381"/>
+<hole x="6.35" y="12.065" drill="0.381"/>
+<hole x="6.35" y="11.43" drill="0.381"/>
+<hole x="5.715" y="11.43" drill="0.381"/>
+<hole x="5.08" y="11.43" drill="0.381"/>
+<hole x="4.445" y="11.43" drill="0.381"/>
+<hole x="4.445" y="10.795" drill="0.381"/>
+<hole x="5.08" y="10.795" drill="0.381"/>
+<hole x="5.715" y="10.795" drill="0.381"/>
+<hole x="6.35" y="10.795" drill="0.381"/>
+<hole x="6.35" y="10.16" drill="0.381"/>
+<hole x="5.715" y="10.16" drill="0.381"/>
+<hole x="5.08" y="10.16" drill="0.381"/>
+<hole x="4.445" y="10.16" drill="0.381"/>
+<hole x="4.445" y="9.525" drill="0.381"/>
+<hole x="5.08" y="9.525" drill="0.381"/>
+<hole x="5.715" y="9.525" drill="0.381"/>
+<hole x="6.35" y="9.525" drill="0.381"/>
+<hole x="4.445" y="0" drill="0.381"/>
+<hole x="5.08" y="0" drill="0.381"/>
+<hole x="5.715" y="0" drill="0.381"/>
+<hole x="6.35" y="0" drill="0.381"/>
+<hole x="6.35" y="-0.635" drill="0.381"/>
+<hole x="5.715" y="-0.635" drill="0.381"/>
+<hole x="5.08" y="-0.635" drill="0.381"/>
+<hole x="4.445" y="-0.635" drill="0.381"/>
+<hole x="4.445" y="-1.27" drill="0.381"/>
+<hole x="5.08" y="-1.905" drill="0.381"/>
+<hole x="5.08" y="-1.27" drill="0.381"/>
+<hole x="5.715" y="-1.27" drill="0.381"/>
+<hole x="6.35" y="-1.27" drill="0.381"/>
+<hole x="6.35" y="-1.905" drill="0.381"/>
+<hole x="5.715" y="-1.905" drill="0.381"/>
+<hole x="4.445" y="-1.905" drill="0.381"/>
+<hole x="4.445" y="-2.54" drill="0.381"/>
+<hole x="5.08" y="-2.54" drill="0.381"/>
+<hole x="6.35" y="-2.54" drill="0.381"/>
+<hole x="5.715" y="-2.54" drill="0.381"/>
 </package>
 <package name="SOT23-3">
 <wire x1="-1.4224" y1="-0.3" x2="-1.4224" y2="0.6604" width="0.1524" layer="21"/>
@@ -865,6 +849,7 @@
 </devices>
 </deviceset>
 <deviceset name="TB6559FG">
+<description>toshiba motor driver</description>
 <gates>
 <gate name="G$1" symbol="TB6559FG" x="0" y="0"/>
 </gates>
@@ -873,7 +858,7 @@
 <connects>
 <connect gate="G$1" pin="5VOUT" pad="VREG"/>
 <connect gate="G$1" pin="ALERT" pad="ALERT"/>
-<connect gate="G$1" pin="GND" pad="FIN FIN2"/>
+<connect gate="G$1" pin="GND" pad="FIN FIN2 P$4 P$20"/>
 <connect gate="G$1" pin="IN1" pad="IN1"/>
 <connect gate="G$1" pin="IN2" pad="IN2"/>
 <connect gate="G$1" pin="NOCON" pad="NC"/>
@@ -25788,7 +25773,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <net name="N$43" class="0">
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="-144.78" x2="50.8" y2="-144.78" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="-144.78" x2="53.34" y2="-144.78" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="-144.78" x2="55.88" y2="-147.32" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="IN1"/>
@@ -25797,7 +25781,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="175.26" y1="-147.32" x2="55.88" y2="-147.32" width="0.1524" layer="91"/>
 <junction x="55.88" y="-147.32"/>
 <wire x1="50.8" y1="-144.78" x2="50.8" y2="-134.62" width="0.1524" layer="91"/>
-<junction x="50.8" y="-144.78"/>
 <wire x1="50.8" y1="-134.62" x2="45.72" y2="-134.62" width="0.1524" layer="91"/>
 <pinref part="U$17" gate="G$1" pin="EM2"/>
 <wire x1="45.72" y1="-134.62" x2="45.72" y2="-66.04" width="0.1524" layer="91"/>

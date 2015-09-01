@@ -14865,12 +14865,10 @@ Grid 5.08 mm&lt;p&gt;
 <parts>
 <part name="U$1" library="custom" deviceset="TEENSY31DEV" device=""/>
 <part name="U$5" library="custom" deviceset="TRACOTMR2WIN" device=""/>
-<part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="P+2" library="supply1" deviceset="+12V" device=""/>
 <part name="GNDI1" library="supply1" deviceset="GNDI" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-SPDT" device="KIT" value="LOGIC POWER"/>
-<part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="resistor" deviceset="C-EU" device="C1206" value="0.1uF"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
@@ -14938,6 +14936,15 @@ Grid 5.08 mm&lt;p&gt;
 <part name="ENDSTOPS" library="con-wago-508" deviceset="W237-03P" device=""/>
 <part name="MODE_SEL" library="con-wago-508" deviceset="W237-05P" device=""/>
 <part name="CLUTCH_SW" library="con-wago-508" deviceset="W237-02P" device=""/>
+<part name="P+3" library="supply1" deviceset="+5V" device=""/>
+<part name="P+1" library="supply1" deviceset="+5V" device=""/>
+<part name="P+5" library="supply1" deviceset="+5V" device=""/>
+<part name="P+6" library="supply1" deviceset="+5V" device=""/>
+<part name="GND15" library="supply1" deviceset="GND" device=""/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
+<part name="GSENDSTOP" library="con-wago-508" deviceset="W237-03P" device=""/>
+<part name="AGND4" library="supply1" deviceset="AGND" device=""/>
+<part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14947,12 +14954,10 @@ Grid 5.08 mm&lt;p&gt;
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
 <instance part="U$5" gate="G$1" x="66.04" y="-7.62"/>
-<instance part="P+1" gate="1" x="68.58" y="-25.4" rot="R180"/>
 <instance part="P+2" gate="1" x="81.28" y="10.16" rot="R270"/>
 <instance part="GNDI1" gate="G$1" x="48.26" y="2.54"/>
 <instance part="GND1" gate="1" x="63.5" y="-25.4"/>
 <instance part="S1" gate="1" x="-27.94" y="17.78" rot="R180"/>
-<instance part="P+3" gate="1" x="-40.64" y="20.32" rot="R90"/>
 <instance part="GND2" gate="1" x="-33.02" y="10.16"/>
 <instance part="C1" gate="G$1" x="-25.4" y="15.24"/>
 <instance part="GND4" gate="1" x="-20.32" y="-20.32"/>
@@ -14963,8 +14968,8 @@ Grid 5.08 mm&lt;p&gt;
 <instance part="10VZENER" gate="G$1" x="66.04" y="15.24"/>
 <instance part="R5" gate="G$1" x="55.88" y="25.4" rot="R180"/>
 <instance part="BAT_CONN" gate="-1" x="73.66" y="48.26" rot="R270"/>
-<instance part="BAT_CONN" gate="-2" x="68.58" y="48.26" rot="R270"/>
-<instance part="GNDI4" gate="G$1" x="68.58" y="40.64"/>
+<instance part="BAT_CONN" gate="-2" x="66.04" y="48.26" rot="R270"/>
+<instance part="GNDI4" gate="G$1" x="66.04" y="35.56"/>
 <instance part="AGND1" gate="VR1" x="-17.78" y="22.86" rot="R180"/>
 <instance part="JP3" gate="G$1" x="-68.58" y="-200.66"/>
 <instance part="GND10" gate="1" x="-55.88" y="-198.12" rot="R90"/>
@@ -15032,6 +15037,17 @@ Grid 5.08 mm&lt;p&gt;
 <instance part="MODE_SEL" gate="-5" x="12.7" y="-353.06" rot="R180"/>
 <instance part="CLUTCH_SW" gate="-1" x="2.54" y="-447.04" rot="R180"/>
 <instance part="CLUTCH_SW" gate="-2" x="2.54" y="-441.96" rot="R180"/>
+<instance part="P+3" gate="1" x="-40.64" y="20.32" rot="R90"/>
+<instance part="P+1" gate="1" x="68.58" y="-27.94" rot="R180"/>
+<instance part="P+5" gate="1" x="-53.34" y="-129.54" rot="R270"/>
+<instance part="P+6" gate="1" x="-53.34" y="-162.56" rot="R270"/>
+<instance part="GND15" gate="1" x="-45.72" y="-132.08" rot="R90"/>
+<instance part="GND16" gate="1" x="-45.72" y="-165.1" rot="R90"/>
+<instance part="GSENDSTOP" gate="-1" x="-33.02" y="-114.3" rot="R180"/>
+<instance part="GSENDSTOP" gate="-2" x="-33.02" y="-109.22" rot="R180"/>
+<instance part="GSENDSTOP" gate="-3" x="-33.02" y="-104.14" rot="R180"/>
+<instance part="AGND4" gate="VR1" x="-43.18" y="-111.76"/>
+<instance part="+3V11" gate="G$1" x="-43.18" y="-101.6"/>
 </instances>
 <busses>
 <bus name="P[0..23]">
@@ -15052,18 +15068,6 @@ Grid 5.08 mm&lt;p&gt;
 </bus>
 </busses>
 <nets>
-<net name="+5VCLEAN" class="0">
-<segment>
-<pinref part="U$5" gate="G$1" pin="+VO"/>
-<pinref part="P+1" gate="1" pin="+5V"/>
-<wire x1="68.58" y1="-22.86" x2="68.58" y2="-20.32" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+3" gate="1" pin="+5V"/>
-<pinref part="S1" gate="1" pin="S"/>
-<wire x1="-38.1" y1="20.32" x2="-33.02" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -15143,6 +15147,16 @@ Grid 5.08 mm&lt;p&gt;
 <pinref part="CLUTCH_SW" gate="-1" pin="KL"/>
 <wire x1="-30.48" y1="-447.04" x2="-2.54" y2="-447.04" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SOLDVR1" gate="G$1" pin="9"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+<wire x1="-48.26" y1="-132.08" x2="-60.96" y2="-132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND16" gate="1" pin="GND"/>
+<pinref part="SOLDVR2" gate="G$1" pin="9"/>
+<wire x1="-48.26" y1="-165.1" x2="-60.96" y2="-165.1" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="GNDI" class="0">
 <segment>
@@ -15157,6 +15171,7 @@ Grid 5.08 mm&lt;p&gt;
 <segment>
 <pinref part="BAT_CONN" gate="-2" pin="KL"/>
 <pinref part="GNDI4" gate="G$1" pin="GNDI"/>
+<wire x1="66.04" y1="38.1" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -15210,6 +15225,11 @@ Grid 5.08 mm&lt;p&gt;
 <segment>
 <pinref part="R18" gate="G$1" pin="2"/>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="+3V11" gate="G$1" pin="+3V3"/>
+<pinref part="GSENDSTOP" gate="-3" pin="KL"/>
+<wire x1="-43.18" y1="-104.14" x2="-38.1" y2="-104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="P23" class="0">
@@ -15365,15 +15385,6 @@ Grid 5.08 mm&lt;p&gt;
 <pinref part="JP2" gate="G$1" pin="9"/>
 <wire x1="-2.54" y1="55.88" x2="-2.54" y2="53.34" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="-30.48" y1="-259.08" x2="-10.16" y2="-259.08" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="-259.08" x2="-10.16" y2="-241.3" width="0.1524" layer="91"/>
-<pinref part="SHIFT" gate="-2" pin="KL"/>
-<wire x1="-10.16" y1="-241.3" x2="-5.08" y2="-241.3" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="-259.08" x2="-30.48" y2="-259.08" width="0.1524" layer="91"/>
-<junction x="-30.48" y="-259.08"/>
-</segment>
 </net>
 <net name="P14" class="0">
 <segment>
@@ -15385,13 +15396,8 @@ Grid 5.08 mm&lt;p&gt;
 <wire x1="-5.08" y1="55.88" x2="-5.08" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="-30.48" y1="-231.14" x2="-10.16" y2="-231.14" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="-231.14" x2="-10.16" y2="-236.22" width="0.1524" layer="91"/>
-<pinref part="SHIFT" gate="-3" pin="KL"/>
-<wire x1="-10.16" y1="-236.22" x2="-5.08" y2="-236.22" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="-231.14" x2="-30.48" y2="-231.14" width="0.1524" layer="91"/>
-<junction x="-30.48" y="-231.14"/>
+<pinref part="GSENDSTOP" gate="-1" pin="KL"/>
+<wire x1="-50.8" y1="-114.3" x2="-38.1" y2="-114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="P13" class="0">
@@ -15582,6 +15588,15 @@ Grid 5.08 mm&lt;p&gt;
 <wire x1="17.78" y1="55.88" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
 <label x="22.86" y="60.96" size="1.778" layer="91"/>
 </segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="-30.48" y1="-231.14" x2="-10.16" y2="-231.14" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="-231.14" x2="-10.16" y2="-236.22" width="0.1524" layer="91"/>
+<pinref part="SHIFT" gate="-3" pin="KL"/>
+<wire x1="-10.16" y1="-236.22" x2="-5.08" y2="-236.22" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="-231.14" x2="-30.48" y2="-231.14" width="0.1524" layer="91"/>
+<junction x="-30.48" y="-231.14"/>
+</segment>
 </net>
 <net name="P12" class="0">
 <segment>
@@ -15592,6 +15607,15 @@ Grid 5.08 mm&lt;p&gt;
 <pinref part="JP2" gate="G$1" pin="12"/>
 <wire x1="-10.16" y1="55.88" x2="-10.16" y2="53.34" width="0.1524" layer="91"/>
 <label x="-17.78" y="53.34" size="1.778" layer="91"/>
+</segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="-30.48" y1="-259.08" x2="-10.16" y2="-259.08" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="-259.08" x2="-10.16" y2="-241.3" width="0.1524" layer="91"/>
+<pinref part="SHIFT" gate="-2" pin="KL"/>
+<wire x1="-10.16" y1="-241.3" x2="-5.08" y2="-241.3" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="-259.08" x2="-30.48" y2="-259.08" width="0.1524" layer="91"/>
+<junction x="-30.48" y="-259.08"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -15630,6 +15654,11 @@ Grid 5.08 mm&lt;p&gt;
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="AGND3" gate="VR1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="AGND4" gate="VR1" pin="AGND"/>
+<pinref part="GSENDSTOP" gate="-2" pin="KL"/>
+<wire x1="-43.18" y1="-109.22" x2="-38.1" y2="-109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -15709,9 +15738,29 @@ Grid 5.08 mm&lt;p&gt;
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="U$17" gate="G$1" pin="CL1"/>
-<wire x1="30.48" y1="-63.5" x2="22.86" y2="-63.5" width="0.1524" layer="91"/>
+<pinref part="S1" gate="1" pin="S"/>
+<pinref part="P+3" gate="1" pin="+5V"/>
+<wire x1="-38.1" y1="20.32" x2="-33.02" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="+VO"/>
+<pinref part="P+1" gate="1" pin="+5V"/>
+<wire x1="68.58" y1="-25.4" x2="68.58" y2="-20.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="P+4" gate="1" pin="+5V"/>
+<pinref part="U$17" gate="G$1" pin="CL1"/>
+<wire x1="22.86" y1="-63.5" x2="30.48" y2="-63.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SOLDVR1" gate="G$1" pin="10"/>
+<pinref part="P+5" gate="1" pin="+5V"/>
+<wire x1="-55.88" y1="-129.54" x2="-60.96" y2="-129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SOLDVR2" gate="G$1" pin="10"/>
+<pinref part="P+6" gate="1" pin="+5V"/>
+<wire x1="-55.88" y1="-162.56" x2="-60.96" y2="-162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND4" class="0">
