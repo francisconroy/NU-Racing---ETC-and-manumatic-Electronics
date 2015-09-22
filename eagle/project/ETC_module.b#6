@@ -7836,6 +7836,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </signal>
 <signal name="N$55">
 </signal>
+<signal name="N$56">
+<wire x1="56.896" y1="47.498" x2="57.912" y2="47.498" width="1.016" layer="1"/>
+</signal>
 </signals>
 </board>
 </drawing>
