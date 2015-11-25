@@ -430,67 +430,11 @@
 <smd name="OUT2" x="11" y="9.6" dx="1.6" dy="0.4" layer="1" rot="R90"/>
 <smd name="FIN" x="5.5" y="10.8" dx="4" dy="3.4" layer="1" rot="R90"/>
 <smd name="FIN2" x="5.5" y="-1.2" dx="4" dy="3.4" layer="1" rot="R90"/>
-<hole x="4.2" y="12.4" drill="0.4"/>
-<hole x="4.2" y="11.8" drill="0.4"/>
-<hole x="4.2" y="11.2" drill="0.4"/>
-<hole x="4.2" y="10.6" drill="0.4"/>
-<hole x="4.2" y="10" drill="0.4"/>
-<hole x="4.2" y="9.4" drill="0.4"/>
-<hole x="4.8" y="12.4" drill="0.4"/>
-<hole x="4.8" y="11.8" drill="0.4"/>
-<hole x="4.8" y="11.2" drill="0.4"/>
-<hole x="4.8" y="10.6" drill="0.4"/>
-<hole x="4.8" y="10" drill="0.4"/>
-<hole x="4.8" y="9.4" drill="0.4"/>
-<hole x="5.4" y="9.4" drill="0.4"/>
-<hole x="5.4" y="10" drill="0.4"/>
-<hole x="5.4" y="10.6" drill="0.4"/>
-<hole x="5.4" y="11.2" drill="0.4"/>
-<hole x="5.4" y="11.8" drill="0.4"/>
-<hole x="5.4" y="12.4" drill="0.4"/>
-<hole x="6" y="12.4" drill="0.4"/>
-<hole x="6" y="11.8" drill="0.4"/>
-<hole x="6" y="11.2" drill="0.4"/>
-<hole x="6" y="10.6" drill="0.4"/>
-<hole x="6" y="10" drill="0.4"/>
-<hole x="6" y="9.4" drill="0.4"/>
-<hole x="6.6" y="9.4" drill="0.4"/>
-<hole x="6.6" y="10" drill="0.4"/>
-<hole x="6.6" y="10.6" drill="0.4"/>
-<hole x="6.6" y="11.2" drill="0.4"/>
-<hole x="6.6" y="11.8" drill="0.4"/>
-<hole x="6.6" y="12.4" drill="0.4"/>
-<hole x="4.2" y="0.4" drill="0.4"/>
-<hole x="4.8" y="0.4" drill="0.4"/>
-<hole x="4.2" y="-0.2" drill="0.4"/>
-<hole x="4.8" y="-0.2" drill="0.4"/>
-<hole x="4.2" y="-0.8" drill="0.4"/>
-<hole x="4.8" y="-0.8" drill="0.4"/>
-<hole x="4.2" y="-1.4" drill="0.4"/>
-<hole x="4.8" y="-1.4" drill="0.4"/>
-<hole x="4.2" y="-2" drill="0.4"/>
-<hole x="4.8" y="-2" drill="0.4"/>
-<hole x="4.2" y="-2.6" drill="0.4"/>
-<hole x="4.8" y="-2.6" drill="0.4"/>
-<hole x="5.4" y="0.4" drill="0.4"/>
-<hole x="6" y="0.4" drill="0.4"/>
-<hole x="6.6" y="0.4" drill="0.4"/>
-<hole x="6.6" y="-0.2" drill="0.4"/>
-<hole x="6" y="-0.2" drill="0.4"/>
-<hole x="6" y="-0.8" drill="0.4"/>
-<hole x="6.6" y="-0.8" drill="0.4"/>
-<hole x="6" y="-1.4" drill="0.4"/>
-<hole x="6.6" y="-1.4" drill="0.4"/>
-<hole x="6" y="-2" drill="0.4"/>
-<hole x="6.6" y="-2" drill="0.4"/>
-<hole x="6" y="-2.6" drill="0.4"/>
-<hole x="6.6" y="-2.6" drill="0.4"/>
 <smd name="P$4" x="5.5" y="-1.2" dx="4" dy="3.4" layer="16" rot="R90"/>
 <smd name="P$20" x="5.5" y="10.8" dx="4" dy="3.4" layer="16" rot="R90"/>
 <wire x1="0.4" y1="9.6" x2="0.6" y2="9.6" width="0.127" layer="21"/>
 <wire x1="1.4" y1="9.6" x2="1.6" y2="9.6" width="0.127" layer="21"/>
 <wire x1="2.4" y1="9.6" x2="2.6" y2="9.6" width="0.127" layer="21"/>
-<wire x1="3.4" y1="9.6" x2="3.6" y2="9.6" width="0.127" layer="21"/>
 <wire x1="7.4" y1="9.6" x2="7.6" y2="9.6" width="0.127" layer="21"/>
 <wire x1="8.4" y1="9.6" x2="8.6" y2="9.6" width="0.127" layer="21"/>
 <wire x1="9.4" y1="9.6" x2="9.6" y2="9.6" width="0.127" layer="21"/>

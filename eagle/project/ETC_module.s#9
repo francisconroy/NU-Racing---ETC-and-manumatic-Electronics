@@ -865,6 +865,7 @@
 </devices>
 </deviceset>
 <deviceset name="TB6559FG">
+<description>toshiba motor driver</description>
 <gates>
 <gate name="G$1" symbol="TB6559FG" x="0" y="0"/>
 </gates>
@@ -873,7 +874,7 @@
 <connects>
 <connect gate="G$1" pin="5VOUT" pad="VREG"/>
 <connect gate="G$1" pin="ALERT" pad="ALERT"/>
-<connect gate="G$1" pin="GND" pad="FIN FIN2"/>
+<connect gate="G$1" pin="GND" pad="FIN FIN2 P$4 P$20"/>
 <connect gate="G$1" pin="IN1" pad="IN1"/>
 <connect gate="G$1" pin="IN2" pad="IN2"/>
 <connect gate="G$1" pin="NOCON" pad="NC"/>

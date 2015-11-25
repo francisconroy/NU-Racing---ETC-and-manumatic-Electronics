@@ -614,6 +614,17 @@
 <rectangle x1="0.4572" y1="1.8542" x2="0.8128" y2="2.8702" layer="51"/>
 <rectangle x1="1.7272" y1="1.8542" x2="2.0828" y2="2.8702" layer="51"/>
 </package>
+<package name="JEDECDO-214AB">
+<smd name="A" x="3.3274" y="0" dx="1.5494" dy="3.1496" layer="1" rot="R180"/>
+<smd name="K" x="-3.3274" y="0" dx="1.5494" dy="3.1496" layer="1" rot="R180"/>
+<wire x1="-4.445" y1="1.905" x2="4.445" y2="1.905" width="0.127" layer="25"/>
+<wire x1="4.445" y1="1.905" x2="4.445" y2="-1.905" width="0.127" layer="25"/>
+<wire x1="4.445" y1="-1.905" x2="-4.445" y2="-1.905" width="0.127" layer="25"/>
+<wire x1="-4.445" y1="-1.905" x2="-4.445" y2="1.905" width="0.127" layer="25"/>
+<wire x1="-5.08" y1="1.905" x2="-5.08" y2="-1.905" width="0.127" layer="25"/>
+<text x="-5.08" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5.08" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TEENSY31SYM">
@@ -760,6 +771,17 @@
 <pin name="VIN" x="-2.54" y="-12.7" length="middle" rot="R90"/>
 <text x="-10.16" y="10.668" size="1.27" layer="96">&gt;NAME</text>
 <text x="-10.16" y="-9.398" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="DIODE">
+<wire x1="0" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
+<pin name="A" x="-12.7" y="1.27" length="middle"/>
+<pin name="K" x="5.08" y="1.27" length="middle" rot="R180"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -929,6 +951,22 @@
 <connect gate="G$1" pin="VIN" pad="2"/>
 <connect gate="G$1" pin="VOUT+" pad="7"/>
 <connect gate="G$1" pin="VOUT-" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LNBTVS">
+<gates>
+<gate name="G$1" symbol="DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JEDECDO-214AB">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -24572,6 +24610,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="U$18" library="SparkFun-DiscreteSemi" deviceset="OPTOISOLATOR-2" device="SOIC8"/>
 <part name="U$19" library="SparkFun-DiscreteSemi" deviceset="OPTOISOLATOR-2" device="SOIC8"/>
 <part name="GNDI12" library="supply1" deviceset="GNDI" device=""/>
+<part name="U$1" library="custom" deviceset="LNBTVS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24641,8 +24680,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="+3V5" gate="G$1" x="-68.58" y="-134.62" rot="R270"/>
 <instance part="+3V6" gate="G$1" x="-73.66" y="-149.86" rot="R270"/>
 <instance part="BAT_CONN" gate="-1" x="73.66" y="48.26" rot="R270"/>
-<instance part="BAT_CONN" gate="-2" x="68.58" y="48.26" rot="R270"/>
-<instance part="GNDI4" gate="G$1" x="68.58" y="40.64"/>
+<instance part="BAT_CONN" gate="-2" x="55.88" y="48.26" rot="R270"/>
+<instance part="GNDI4" gate="G$1" x="55.88" y="33.02"/>
 <instance part="C4" gate="G$1" x="-60.96" y="-76.2"/>
 <instance part="C5" gate="G$1" x="-55.88" y="-81.28"/>
 <instance part="C7" gate="G$1" x="-78.74" y="-124.46"/>
@@ -24764,6 +24803,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="U$18" gate="G$1" x="40.64" y="-170.18"/>
 <instance part="U$19" gate="G$1" x="20.32" y="-337.82" rot="MR0"/>
 <instance part="GNDI12" gate="G$1" x="205.74" y="-101.6"/>
+<instance part="U$1" gate="G$1" x="68.58" y="40.64"/>
 </instances>
 <busses>
 <bus name="P[0..23]">
@@ -25039,6 +25079,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <segment>
 <pinref part="BAT_CONN" gate="-2" pin="KL"/>
 <pinref part="GNDI4" gate="G$1" pin="GNDI"/>
+<wire x1="55.88" y1="35.56" x2="55.88" y2="41.91" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="A"/>
+<wire x1="55.88" y1="41.91" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
+<junction x="55.88" y="41.91"/>
 </segment>
 <segment>
 <pinref part="GNDI5" gate="G$1" pin="GNDI"/>
@@ -25672,7 +25716,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <segment>
 <pinref part="BAT_CONN" gate="-1" pin="KL"/>
 <pinref part="Q2" gate="G$1" pin="D"/>
-<wire x1="73.66" y1="43.18" x2="73.66" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="43.18" x2="73.66" y2="41.91" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="K"/>
+<wire x1="73.66" y1="41.91" x2="73.66" y2="30.48" width="0.1524" layer="91"/>
+<junction x="73.66" y="41.91"/>
 </segment>
 </net>
 <net name="N$19" class="0">

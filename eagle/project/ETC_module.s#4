@@ -428,10 +428,10 @@
 <smd name="ALERT" x="9" y="9.6" dx="1.6" dy="0.4" layer="1" rot="R90"/>
 <smd name="P-GND" x="10" y="9.6" dx="1.6" dy="0.4" layer="1" rot="R90"/>
 <smd name="OUT2" x="11" y="9.6" dx="1.6" dy="0.4" layer="1" rot="R90"/>
-<smd name="FIN" x="5.5" y="10.8" dx="4" dy="3.4" layer="1" rot="R90"/>
-<smd name="FIN2" x="5.5" y="-1.2" dx="4" dy="3.4" layer="1" rot="R90"/>
-<smd name="P$4" x="5.5" y="-1.2" dx="4" dy="3.4" layer="16" rot="R90"/>
-<smd name="P$20" x="5.5" y="10.8" dx="4" dy="3.4" layer="16" rot="R90"/>
+<smd name="FIN" x="5.5" y="9.53" dx="1.524" dy="3.4" layer="1" rot="R90"/>
+<smd name="FIN2" x="5.5" y="0.07" dx="1.524" dy="3.4" layer="1" rot="R90"/>
+<smd name="P$4" x="5.5" y="0.07" dx="1.524" dy="3.4" layer="16" rot="R90"/>
+<smd name="P$20" x="5.5" y="9.53" dx="1.524" dy="3.4" layer="16" rot="R90"/>
 <wire x1="0.4" y1="9.6" x2="0.6" y2="9.6" width="0.127" layer="21"/>
 <wire x1="1.4" y1="9.6" x2="1.6" y2="9.6" width="0.127" layer="21"/>
 <wire x1="2.4" y1="9.6" x2="2.6" y2="9.6" width="0.127" layer="21"/>
