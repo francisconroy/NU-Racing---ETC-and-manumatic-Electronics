@@ -24647,7 +24647,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="GND5" gate="1" x="20.32" y="-88.9"/>
 <instance part="P+4" gate="1" x="10.16" y="-55.88"/>
 <instance part="GNDI2" gate="G$1" x="63.5" y="-104.14"/>
-<instance part="Q2" gate="G$1" x="73.66" y="25.4" rot="MR180"/>
+<instance part="Q2" gate="G$1" x="73.66" y="25.4"/>
 <instance part="10VZENER" gate="G$1" x="66.04" y="15.24"/>
 <instance part="R5" gate="G$1" x="55.88" y="25.4" rot="R180"/>
 <instance part="U$6" gate="G$1" x="58.42" y="-317.5" rot="MR0"/>
@@ -25646,7 +25646,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="73.66" y1="10.16" x2="78.74" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+12V"/>
 <junction x="73.66" y="10.16"/>
-<pinref part="Q2" gate="G$1" pin="D"/>
+<pinref part="Q2" gate="G$1" pin="S"/>
 <wire x1="73.66" y1="20.32" x2="73.66" y2="15.24" width="0.1524" layer="91"/>
 <junction x="73.66" y="15.24"/>
 </segment>
@@ -26293,11 +26293,11 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </net>
 <net name="N$58" class="0">
 <segment>
-<pinref part="Q2" gate="G$1" pin="S"/>
-<wire x1="73.66" y1="43.18" x2="73.66" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="BAT_CONN" gate="-1" pin="KL"/>
 <wire x1="73.66" y1="43.18" x2="73.66" y2="41.91" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="K"/>
+<pinref part="Q2" gate="G$1" pin="D"/>
+<wire x1="73.66" y1="30.48" x2="73.66" y2="43.18" width="0.1524" layer="91"/>
 <junction x="73.66" y="43.18"/>
 </segment>
 </net>
